@@ -1,0 +1,24 @@
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.dashboard-grid > * {
+  grid-column: span 12;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
+}
